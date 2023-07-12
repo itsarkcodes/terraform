@@ -48,4 +48,30 @@ Syntax:
 
 ![image](https://github.com/itsarkcodes/terraform/assets/87442305/e436103a-b4a8-465a-b315-4c2157d8b531)
 
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/83831b00-26e3-4407-b9d1-8e59e881139b)
+
+- Different List of Type
+  
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/b1bdca8c-999a-475c-ae8d-2d3ee12b2fe3)
+
+## 2. Map
+- A Map is data represneted in the formet of Key-Value pairs
+Syntax:
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/6a46f48f-6677-45b9-83d7-854611486787)
+
+- We can provide default values as many we want in Key-Value pairs
+- To access a value from the map we can use of key matching as shown below
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/8ee9d2be-a805-479c-9743-7d33c5dcda76)
+
+- Different Map of Type
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/59f00ad4-7779-44fb-a901-78d98a95ff4f)
+
+## 3. Set
+- Set is similar to a List. The difference between set and list is that a set cannot have duplicate elements
+
+
+
 
