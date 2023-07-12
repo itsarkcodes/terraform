@@ -72,6 +72,9 @@ Syntax:
 ## 3. Set
 - Set is similar to a List. The difference between set and list is that a set cannot have duplicate elements
 
+Eg:
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/e42f160c-fb92-4dc0-bd6e-4f61b0cd347d)
 
 
 
