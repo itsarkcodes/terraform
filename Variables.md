@@ -76,5 +76,5 @@ Eg:
 
 ![image](https://github.com/itsarkcodes/terraform/assets/87442305/e42f160c-fb92-4dc0-bd6e-4f61b0cd347d)
 
-
+  
 
