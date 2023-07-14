@@ -33,6 +33,11 @@ string, number, bool, any
 ## Additional Variable Types:
 list, map, object, tuple
 
+## Type Constraints:
+1. Primitive Type: bool, string, number
+2. Complex Type: set, map
+3. Structural Type: Object, Tuple
+
 ## 1. List
 - A list is a numbered collection of values
 Syntax:
@@ -76,5 +81,14 @@ Eg:
 
 ![image](https://github.com/itsarkcodes/terraform/assets/87442305/e42f160c-fb92-4dc0-bd6e-4f61b0cd347d)
 
-  
+## 4. Objects
+We can create complex datastructure by combining all the variables type
+Eg: 
 
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/c35f6e57-6d19-4ea4-82e7-9809dad23e1b)
+
+- Providing default values:
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/598d1b36-3737-4508-9d97-a6e2927fbcf6)
+
+- ## 5. Tuples
