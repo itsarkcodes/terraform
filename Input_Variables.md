@@ -88,16 +88,48 @@ Eg:
 ```tf
 variable "bella" {
   type = object({
-      name = string
-      color = string
-      age = number
-      food = list(string)
-      favorite_pet = bool
-})
+    name = string
+    color = string
+    age = number
+    food = list(string)
+    favorite_pet = bool
+  })
 }
 ```
-- Providing default values:
+- Providing default values in the same variable block:
 
-![image](https://github.com/itsarkcodes/terraform/assets/87442305/598d1b36-3737-4508-9d97-a6e2927fbcf6)
+```tf
+variable "bella" {
+  type = object({
+    name = string
+    color = string
+    age = number
+    food = list(string)
+    favorite_pet = bool
+  })
 
-- ## 5. Tuples
+  default = {
+    name = "bella"
+    color = "brown"
+    age = 7
+    food = [ "fish", "chicken", "turkey" ]
+    favorite_pet = true
+  }
+}
+```
+
+## 5. Tuples
+- Tuple is similar to a list. But it can consist of different variable types.
+- Eg:
+```tf
+variable "kitty" {
+  type = tuple([ string, number, bool ])
+  default = [ "cat", 7, true ]
+}
+```
+- The variables to be passed to this should be exactly 3 in length and of that specific type. Here ```[ "cat", 7, true ]```
+
+![image](https://github.com/itsarkcodes/terraform/assets/87442305/8d7de793-41ee-4e1e-817c-45ed08c37512)
+
+
+
