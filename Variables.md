@@ -83,10 +83,19 @@ Eg:
 
 ## 4. Objects
 We can create complex datastructure by combining all the variables type
-Eg: 
+Eg:
 
-![image](https://github.com/itsarkcodes/terraform/assets/87442305/c35f6e57-6d19-4ea4-82e7-9809dad23e1b)
-
+```tf
+variable "bella" {
+  type = object({
+      name = string
+      color = string
+      age = number
+      food = list(string)
+      favorite_pet = bool
+})
+}
+```
 - Providing default values:
 
 ![image](https://github.com/itsarkcodes/terraform/assets/87442305/598d1b36-3737-4508-9d97-a6e2927fbcf6)
