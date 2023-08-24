@@ -1,4 +1,4 @@
-![image](https://github.com/itsarkcodes/terraform/assets/87442305/0edb86bf-0e42-4943-9802-9292031e0405)# More Commands
+# More Commands
 
 ## 1. terraform validate
 - Once we write are terraform config its not neccessary to execute ```terraform plan``` or ```terraform apply``` to check the syntax if its correct or not, we can use ```terraform validate```
