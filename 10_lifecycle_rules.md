@@ -38,3 +38,20 @@ resource "local_file" "pet" {
   }
 }
 ```
+3. Prevent Destroy:
+- Imagine you have a valuable file on your computer, and you want to make sure you don't accidentally delete it.
+- ```Prevent destroy``` in Terraform is a bit like marking a resource as "do not delete" so that even if you tell Terraform to remove it, it won't.  
+Eg:
+```tf
+resource "local_file" "pet" {
+  filename = "/roots/pet.txt"
+  content = "Hello pet"
+  file_permission = "0700"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+```
+4. Ignore Changes:
+- 
