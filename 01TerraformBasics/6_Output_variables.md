@@ -26,3 +26,22 @@ output "pet-name" {
 ## Use Case
 - Display details about provision resource on the screen
 - To feed output variables to other IAC tools such as script or Ansible playbook
+
+## Real Example:
+Let's say you've deployed an AWS EC2 instance using Terraform, and you want to extract and display its public IP address as an output variable. Here's an example:
+```tf
+provider "aws" {
+  region = "us-west-2"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+}
+
+output "public_ip" {
+  value = aws_instance.example.public_ip
+}
+```
+- Outputs:
+> public_ip = 203.0.113.12
