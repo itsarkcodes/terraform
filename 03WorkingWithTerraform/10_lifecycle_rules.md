@@ -54,4 +54,20 @@ resource "local_file" "pet" {
 }
 ```
 4. Ignore Changes:
-- 
+- This rule allows you to ignore specific changes to attributes of a resource.
+- This can be helpful for properties that might change but aren't important for Terraform to manage.
+- Eg:
+```tf
+resource "aws_instance" "webserver" {
+  ami = "ami-09u898979"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Project-A"
+  }
+  lifecycle {
+    ignore_changes = [ tags ]
+  }
+}
+```
+- If someone changes the tags directly in the AWS Management Console or via another method outside of Terraform, Terraform won't try to reconcile those changes or mark the resource for an update due to tag modifications.
+
